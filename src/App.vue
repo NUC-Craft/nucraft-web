@@ -1,6 +1,12 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <v-app-bar app>
+    TITLE HERE
+  </v-app-bar>
+  <v-main>
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  </v-main>
+
 </template>
 
 <script>
