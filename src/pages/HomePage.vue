@@ -15,6 +15,7 @@
     <v-card-text class="text--primary">
       <p>NUCraft 取自 NUC Craft ，将两个 C 合并而来，意为中北大学的MC服务器</p>
       <p>服务器开学期间拥有1000Mbps校园网络，DELL PowerEdge 12Gen 物理服务器，依托于中北大学AI+移动互联创新实验室、动漫创新实验室、漫无止境动漫社的良好资源与人员条件，致力于为同学们提供和谐、友爱、高品质的 MC 游戏体验。</p>
+      <p>IP地址：play.nuc.red</p>
     </v-card-text>
 
     <v-card-actions>
