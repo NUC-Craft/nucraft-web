@@ -4,7 +4,7 @@
       color="#fcb69f"
       dark
       shrink-on-scroll
-      src="@/assets/banner.png"
+      src="@/assets/banner.webp"
       scroll-target="#scrolling-techniques-2"
   >
     <template v-slot:img="{ props }">
