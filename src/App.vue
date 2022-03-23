@@ -8,7 +8,7 @@
           max-height="100vh"
       >
         <v-container style="padding-top: 128px; height: 3000px;">
-          <HelloWorld />
+          <HomePage />
         </v-container>
       </v-sheet>
     </v-card>
@@ -16,15 +16,15 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
 import NavBar from "@/components/NavBar";
+import HomePage from "@/pages/HomePage";
 
 export default {
   name: 'App',
 
   components: {
     NavBar,
-    HelloWorld,
+    HomePage
   },
 
   data: () => ({
