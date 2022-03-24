@@ -8,6 +8,7 @@
           max-height="100vh"
       >
         <v-container style="padding-top: 128px; min-height: 1000px;">
+          
           <HomePage/>
         </v-container>
       </v-sheet>
