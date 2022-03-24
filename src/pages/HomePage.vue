@@ -26,6 +26,7 @@
               text
               :key="k"
               :color="button.color"
+              @click="handleLink(button.link)"
           >
             {{ button.content }}
           </v-btn>
@@ -52,7 +53,7 @@ export default {
         ],
         actions: [
           {
-            link: '',
+            link: 'get-started',
             content: '开始游戏',
             color: 'blue'
           },
@@ -74,7 +75,12 @@ export default {
         ]
       }
     ]
-  })
+  }),
+  methods: {
+    handleLink(url) {
+      this.$router.push({path: url})
+    }
+  }
 }
 </script>
 
