@@ -14,7 +14,7 @@
       ></v-img>
     </template>
 
-    <h2>龙山Craft —— 中北人的MC</h2>
+    <h2>龙山Craft</h2>
 
     <v-spacer></v-spacer>
 

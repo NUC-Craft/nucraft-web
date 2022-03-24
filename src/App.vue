@@ -1,14 +1,14 @@
 <template>
   <v-app>
     <v-card :tile="true" class="overflow-hidden">
-      <NavBar />
+      <NavBar/>
       <v-sheet
           id="scrolling-techniques-2"
           class="overflow-y-auto"
           max-height="100vh"
       >
-        <v-container style="padding-top: 128px; height: 3000px;">
-          <HomePage />
+        <v-container style="padding-top: 128px; min-height: 1000px;">
+          <HomePage/>
         </v-container>
       </v-sheet>
     </v-card>
