@@ -6,7 +6,9 @@
           height="320px"
           :src="item.picture"
       >
-        <v-card-title>{{ item.title }}</v-card-title>
+        <v-card-title class="black transparent">
+          {{ item.title }}
+        </v-card-title>
       </v-img>
 
       <v-card-subtitle class="pb-0">
