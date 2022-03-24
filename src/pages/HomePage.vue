@@ -1,35 +1,37 @@
 <template>
   <div>
-    <v-card v-for="(item, i) in content" :key="i" style="margin: 32px">
-      <v-img
-          class="white--text align-end"
-          height="320px"
-          :src="item.picture"
-      >
-        <v-card-title class="black transparent">
-          {{ item.title }}
-        </v-card-title>
-      </v-img>
-
-      <v-card-subtitle class="pb-0">
-        {{ item.subtitle }}
-      </v-card-subtitle>
-
-      <v-card-text class="text--primary">
-        <p v-for="(paragraph, j) in item.paragraphs" :key="j"> {{ paragraph }} </p>
-      </v-card-text>
-
-      <v-card-actions>
-        <v-btn
-            v-for="(button, k) in item.actions"
-            text
-            :key="k"
-            :color="button.color"
+    <v-container v-for="(item, i) in content" :key="i">
+      <v-card>
+        <v-img
+            class="white--text align-end"
+            height="320px"
+            :src="item.picture"
         >
-          {{ button.content }}
-        </v-btn>
-      </v-card-actions>
-    </v-card>
+          <v-card-title class="black transparent">
+            {{ item.title }}
+          </v-card-title>
+        </v-img>
+
+        <v-card-subtitle class="pb-0">
+          {{ item.subtitle }}
+        </v-card-subtitle>
+
+        <v-card-text class="text--primary">
+          <p v-for="(paragraph, j) in item.paragraphs" :key="j"> {{ paragraph }} </p>
+        </v-card-text>
+
+        <v-card-actions>
+          <v-btn
+              v-for="(button, k) in item.actions"
+              text
+              :key="k"
+              :color="button.color"
+          >
+            {{ button.content }}
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-container>
   </div>
 </template>
 
