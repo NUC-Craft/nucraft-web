@@ -67,8 +67,8 @@
         </v-alert>
         <p>注册后再次进入服务器需要登录，可以参考以下步骤</p>
         <ol>
-          <li>打开聊天框</li>
-          <li>输入<code>/login 你的密码</code>，此处密码为之前注册时输入的</li>
+          <li>打开聊天框；</li>
+          <li>输入<code>/login 你的密码</code>，此处密码为之前注册时输入的；</li>
         </ol>
       </v-card-text>
     </v-card>
