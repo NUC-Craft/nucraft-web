@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="pl-0 pl-md-16 pl-lg-16 pr-0 pr-md-16 pr-lg-16">
     <v-card class="pl-0 pl-md-16 pl-lg-16 pr-0 pr-md-16 pr-lg-16">
       <v-card-title>开始游戏</v-card-title>
       <v-card-text>
