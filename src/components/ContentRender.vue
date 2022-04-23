@@ -8,21 +8,27 @@
               :src="item.picture.url"
               :max-height="item.picture.maxHeight"
           >
-            <v-card-title style="opacity: 0.6" class="black">
-              {{ item.title }}
-            </v-card-title>
+            <div style="opacity: 0.4" class="black">
+              <v-card-title class="py-2">
+                {{ item.title }}
+              </v-card-title>
+              <div v-if="item.subtitle">
+                <v-card-subtitle class="py-0">
+                  {{ item.subtitle }}
+                </v-card-subtitle>
+              </div>
+            </div>
           </v-img>
         </div>
         <div v-else>
           <v-card-title>
             {{ item.title }}
           </v-card-title>
-        </div>
-
-        <div v-if="item.subtitle">
-          <v-card-subtitle class="pb-0">
-            {{ item.subtitle }}
-          </v-card-subtitle>
+          <div v-if="item.subtitle">
+            <v-card-subtitle>
+              {{ item.subtitle }}
+            </v-card-subtitle>
+          </div>
         </div>
 
         <v-card-text class="text--primary">
