@@ -19,9 +19,11 @@
           </v-card-title>
         </div>
 
-        <v-card-subtitle class="pb-0">
-          {{ item.subtitle }}
-        </v-card-subtitle>
+        <div v-if="item.subtitle">
+          <v-card-subtitle class="pb-0">
+            {{ item.subtitle }}
+          </v-card-subtitle>
+        </div>
 
         <v-card-text class="text--primary">
           <div v-html="item.content"/>
