@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomePage from "@/pages/HomePage";
 import GetStarted from "@/pages/GetStarted";
 import AboutPage from "@/pages/AboutPage";
+import RailwayPage from "@/pages/RailwayPage";
 
 Vue.use(VueRouter)
 
@@ -11,6 +12,11 @@ const routes = [
         path: '/',
         name: 'home',
         component: HomePage
+    },
+    {
+        path: '/railway',
+        name: 'railwayPage',
+        component: RailwayPage
     },
     {
         path: '/get-started',

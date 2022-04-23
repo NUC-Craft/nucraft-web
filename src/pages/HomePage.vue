@@ -53,8 +53,8 @@ export default {
       },
       {
         picture: {url: 'https://s1.ax1x.com/2022/03/25/qUpuvQ.png', maxHeight: '400px'},
-        title: '龙山铁路',
-        subtitle: '龙山局集团',
+        title: '龙山铁路局',
+        subtitle: 'China Railway Longshan Group Co.,Ltd.',
         content:
             '<p>服务器内有四通八达的铁路线路</p>'
             + '<p>龙山局集团始建于2020年，是以铁路客货运输为主的特大型国有企业</p>'
