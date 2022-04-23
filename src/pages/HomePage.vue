@@ -22,7 +22,7 @@
           <v-btn
               text
               color="primary"
-              @click="handleLink('/get-started')"
+              @click="navigate('/get-started')"
           >
             开始游戏
           </v-btn>
@@ -35,6 +35,7 @@
 
 <script>
 import ContentRender from "@/components/ContentRender";
+import {navigate} from "@/utils/navigateHandler";
 
 export default {
   name: "HomePage",
@@ -62,9 +63,7 @@ export default {
     ],
   }),
   methods: {
-    handleLink(url) {
-      this.$router.push({path: url})
-    }
+    navigate: (url) => navigate(url)
   }
 }
 </script>

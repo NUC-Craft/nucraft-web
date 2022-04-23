@@ -36,7 +36,7 @@
                 text
                 :key="j"
                 :color="button.color"
-                @click="handleLink(button.link)"
+                @click="navigate(button.link)"
             >
               {{ button.content }}
             </v-btn>
@@ -48,6 +48,8 @@
 </template>
 
 <script>
+import {navigate} from "@/utils/navigateHandler";
+
 export default {
   name: "ContentRender",
   props: {
@@ -57,9 +59,7 @@ export default {
     }
   },
   methods: {
-    handleLink(url) {
-      this.$router.push({path: url})
-    }
+    navigate: (url) => navigate(url)
   }
 }
 </script>

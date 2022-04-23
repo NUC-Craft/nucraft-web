@@ -13,19 +13,21 @@
       ></v-img>
     </template>
 
-    <v-btn x-large text @click="handleLink('/')">
+    <v-btn x-large text @click="navigate('/')">
       <h2>龙山Craft</h2>
     </v-btn>
 
     <v-spacer/>
 
-    <v-btn v-for="(link, i) in linkList" :key="i" icon @click="handleLink(link.url)">
+    <v-btn v-for="(link, i) in linkList" :key="i" icon @click="navigate(link.url)">
       <v-icon>{{ link.icon }}</v-icon>
     </v-btn>
   </v-app-bar>
 </template>
 
 <script>
+import {navigate} from "@/utils/navigateHandler";
+
 export default {
   name: "NavBar",
   data: () => ({
@@ -33,6 +35,10 @@ export default {
       {
         icon: 'mdi-gamepad-variant',
         url: '/get-started'
+      },
+      {
+        icon: 'mdi-train',
+        url: '/railway'
       },
       {
         icon: 'mdi-github',
@@ -45,13 +51,7 @@ export default {
     ]
   }),
   methods: {
-    handleLink(url) {
-      if (url.includes('://')) {
-        window.location.href = url
-      } else {
-        this.$router.push({path: url})
-      }
-    }
+    navigate: (url) => navigate(url)
   }
 }
 </script>
