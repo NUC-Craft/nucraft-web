@@ -29,68 +29,37 @@
         </v-card-actions>
       </v-card>
     </v-container>
-    <v-container class="pl-0 pl-md-16 pl-lg-16 pr-0 pr-md-16 pr-lg-16" v-for="(item, i) in content" :key="i">
-      <v-card>
-        <v-img
-            class="white--text align-end"
-            :src="item.picture.url"
-            :max-height="item.picture.maxHeight"
-        >
-          <v-card-title style="opacity: 0.6" class="black">
-            {{ item.title }}
-          </v-card-title>
-        </v-img>
-
-        <v-card-subtitle class="pb-0">
-          {{ item.subtitle }}
-        </v-card-subtitle>
-
-        <v-card-text class="text--primary">
-          <p v-for="(paragraph, j) in item.paragraphs" :key="j"> {{ paragraph }} </p>
-        </v-card-text>
-
-        <v-card-actions>
-          <v-btn
-              v-for="(button, k) in item.actions"
-              text
-              :key="k"
-              :color="button.color"
-              @click="handleLink(button.link)"
-          >
-            {{ button.content }}
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-container>
+    <content-render :content-list="contentList"/>
   </div>
 </template>
 
 <script>
+import ContentRender from "@/components/ContentRender";
+
 export default {
   name: "HomePage",
+  components: {ContentRender},
   data: () => ({
-    content: [
+    contentList: [
       {
         picture: {url: 'https://s1.ax1x.com/2022/03/23/q3w59O.jpg', maxHeight: '400px'},
         title: '良好的环境',
         subtitle: '和谐、有爱、互助',
-        paragraphs: [
-          '秉承为玩家服务的理念，管理成员也与玩家身份一同游戏，无滥用权限问题',
-          '对红石、建筑、资源开采等无限制，玩家可自由发展',
-          '玩家都为中北同学，不仅在游戏中互助团结，在校园生活也可以共同交流'
-        ]
+        content:
+            '<p>秉承为玩家服务的理念，管理成员也与玩家身份一同游戏，无滥用权限问题</p>'
+            + '<p>对红石、建筑、资源开采等无限制，玩家可自由发展</p>'
+            + '<p>玩家都为中北同学，不仅在游戏中互助团结，在校园生活也可以共同交流</p>'
       },
       {
         picture: {url: 'https://s1.ax1x.com/2022/03/25/qUpuvQ.png', maxHeight: '400px'},
         title: '龙山铁路',
         subtitle: '龙山局集团',
-        paragraphs: [
-          '服务器内有四通八达的铁路线路',
-          '龙山局集团始建于2020年，是以铁路客货运输为主的特大型国有企业',
-          '龙局管内最早的铁路是上（兰村）沙（城）线，后兴建龙（山）北（国）支线，现管内有上沙、猪人塔专线等多条铁路线路，龙山站、上兰村站、孤山口等18座车站及乘降所。'
-        ]
+        content:
+            '<p>服务器内有四通八达的铁路线路</p>'
+            + '<p>龙山局集团始建于2020年，是以铁路客货运输为主的特大型国有企业</p>'
+            + '<p>龙局管内最早的铁路是上（兰村）沙（城）线，后兴建龙（山）北（国）支线，现管内有上沙、猪人塔专线等多条铁路线路，龙山站、上兰村站、孤山口等18座车站及乘降所。</p>'
       }
-    ]
+    ],
   }),
   methods: {
     handleLink(url) {
