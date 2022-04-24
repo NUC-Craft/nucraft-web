@@ -8,7 +8,7 @@
               :src="item.picture.url"
               :max-height="item.picture.maxHeight"
           >
-            <div style="opacity: 0.4" class="black">
+            <div style="opacity: 0.4" :class="item.picture.class">
               <v-card-title class="py-2">
                 {{ item.title }}
               </v-card-title>

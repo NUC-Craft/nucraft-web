@@ -45,7 +45,7 @@ export default {
   data: () => ({
     contentList: [
       {
-        picture: {url: 'https://s1.ax1x.com/2022/03/23/q3w59O.jpg', maxHeight: '400px'},
+        picture: {url: '/pictures/picture1.webp', maxHeight: '400px', class: 'grey lighten-3 black--text'},
         title: '良好的环境',
         subtitle: '和谐、有爱、互助',
         content:
@@ -54,7 +54,7 @@ export default {
             + '<p>玩家都为中北同学，不仅在游戏中互助团结，在校园生活也可以共同交流</p>'
       },
       {
-        picture: {url: '/pictures/railway.webp', maxHeight: '450px'},
+        picture: {url: '/pictures/railway.webp', maxHeight: '400px', class: 'black'},
         title: '龙山铁路局',
         subtitle: 'China Railway Longshan Group Co.,Ltd.',
         content:
