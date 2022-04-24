@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <v-container class="pl-0 pl-md-16 pl-lg-16 pr-0 pr-md-16 pr-lg-16">
+  <div class="px-0 mx-0 px-md-16 mx-md-16 px-lg-16 mx-lg-16">
+    <v-container>
       <v-card>
         <v-img
             class="white--text align-end"
@@ -52,7 +52,7 @@ export default {
             + '<p>玩家都为中北同学，不仅在游戏中互助团结，在校园生活也可以共同交流</p>'
       },
       {
-        picture: {url: 'https://s1.ax1x.com/2022/03/25/qUpuvQ.png', maxHeight: '400px'},
+        picture: {url: '/pictures/railway.webp', maxHeight: '450px'},
         title: '龙山铁路局',
         subtitle: 'China Railway Longshan Group Co.,Ltd.',
         content:

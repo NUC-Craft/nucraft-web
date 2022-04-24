@@ -1,16 +1,17 @@
 <template>
   <div>
-    <v-container class="pl-0 pl-md-16 pl-lg-16 pr-0 pr-md-16 pr-lg-16" v-for="(item, i) in contentList" :key="i">
+    <v-container v-for="(item, i) in contentList" :key="i">
       <v-card>
         <div v-if="item.picture">
           <v-img
+              contain
               class="white--text align-end"
               :src="item.picture.url"
               :max-height="item.picture.maxHeight"
           >
             <div style="opacity: 0.4" class="black">
               <v-card-title class="py-2">
-                {{ item.title }}
+                {{ item.title }} {{ item.picture.maxHeight }}
               </v-card-title>
               <div v-if="item.subtitle">
                 <v-card-subtitle class="py-0">
