@@ -44,7 +44,7 @@
           <ol>
             <li>在群文件中找到最新的客户端，文件名可以询问管理员；</li>
             <li>如果你没有Java17/不知道什么是Java17/从来没有安装过1.17.x版本的MC，请
-              <a href="https://mirrors.tuna.tsinghua.edu.cn/AdoptOpenJDK/17/jre/x64/windows/OpenJDK17U-jre_x64_windows_hotspot_17.0.2_8.msi">点击这里</a>
+              <a href="https://mirrors.tuna.tsinghua.edu.cn/Adoptium/17/jre/x64/windows/OpenJDK17U-jre_x64_windows_hotspot_17.0.2_8.msi">点击这里</a>
               下载并安装 Java 17（一直点击下一步即可）；
             </li>
             <li>将群文件中下载的客户端移动到电脑上您找得到的地方（比如 <code>D:\Games</code> 或者 <code>桌面</code> 等）；</li>
