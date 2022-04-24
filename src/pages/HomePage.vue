@@ -1,35 +1,37 @@
 <template>
-  <div class="px-0 mx-0 px-md-16 mx-md-16 px-lg-16 mx-lg-16">
-    <v-container>
-      <v-card>
-        <v-img
-            class="white--text align-end"
-            src="@/assets/propaganda.webp"
-        >
-          <div style="opacity: 0.4" class="black">
-            <v-card-title>龙山Craft</v-card-title>
-            <v-card-subtitle>中北人的MC服务器</v-card-subtitle>
-          </div>
-        </v-img>
-        <v-card-text class="text--primary">
-          <p>NUCraft 取自 NUC Craft ，将两个 C 合并而来，意为中北大学的MC服务器</p>
-          <p>服务器依托于中北大学AI+移动互联创新实验室、动漫创新实验室、漫无止境动漫社的良好资源与人员条件，致力于为同学们提供和谐、友爱、高品质的 MC 游戏体验。</p>
-          <p>服务器主线连接有1000Mbps校园网，在校期间，只要是中北大学学生或教职工，均可通过校园网连接至服务器</p>
-          <p>玩家群体面向中北大学学生，无论是红石大佬、建筑大师还是刚入坑的萌新，龙山 Craft 均欢迎你的到来</p>
-        </v-card-text>
-
-        <v-card-actions>
-          <v-btn
-              text
-              color="primary"
-              @click="navigate('/get-started')"
+  <div class="mx-0 mx-lg-16 mx-md-16">
+    <div class="mx-0 mx-md-16 mx-lg-16">
+      <v-container>
+        <v-card>
+          <v-img
+              class="white--text align-end"
+              src="@/assets/propaganda.webp"
           >
-            开始游戏
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-container>
-    <content-render :content-list="contentList"/>
+            <div style="opacity: 0.4" class="black">
+              <v-card-title>龙山Craft</v-card-title>
+              <v-card-subtitle>中北人的MC服务器</v-card-subtitle>
+            </div>
+          </v-img>
+          <v-card-text class="text--primary">
+            <p>NUCraft 取自 NUC Craft ，将两个 C 合并而来，意为中北大学的MC服务器</p>
+            <p>服务器依托于中北大学AI+移动互联创新实验室、动漫创新实验室、漫无止境动漫社的良好资源与人员条件，致力于为同学们提供和谐、友爱、高品质的 MC 游戏体验。</p>
+            <p>服务器主线连接有1000Mbps校园网，在校期间，只要是中北大学学生或教职工，均可通过校园网连接至服务器</p>
+            <p>玩家群体面向中北大学学生，无论是红石大佬、建筑大师还是刚入坑的萌新，龙山 Craft 均欢迎你的到来</p>
+          </v-card-text>
+
+          <v-card-actions>
+            <v-btn
+                text
+                color="primary"
+                @click="navigate('/get-started')"
+            >
+              开始游戏
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-container>
+      <content-render :content-list="contentList"/>
+    </div>
   </div>
 </template>
 

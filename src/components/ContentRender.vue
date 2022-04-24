@@ -4,14 +4,13 @@
       <v-card>
         <div v-if="item.picture">
           <v-img
-              contain
               class="white--text align-end"
               :src="item.picture.url"
               :max-height="item.picture.maxHeight"
           >
             <div style="opacity: 0.4" class="black">
               <v-card-title class="py-2">
-                {{ item.title }} {{ item.picture.maxHeight }}
+                {{ item.title }}
               </v-card-title>
               <div v-if="item.subtitle">
                 <v-card-subtitle class="py-0">
