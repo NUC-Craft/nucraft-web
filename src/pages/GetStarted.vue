@@ -19,7 +19,7 @@
                 发送邮件。</p>
             </v-col>
             <v-col lg="4">
-              <v-img class="text-left" src="@/assets/qrcode.webp" contain max-height="160px"/>
+              <v-img class="rounded" src="@/assets/qrcode.webp" contain max-height="160px"/>
             </v-col>
           </v-row>
           <br/>
