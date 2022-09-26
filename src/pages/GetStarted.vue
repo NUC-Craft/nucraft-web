@@ -14,11 +14,12 @@
               </div>
               <pre>群号：652022722</pre>
               <p>加群二维码：见右</p>
-              <p>为了加入服务器，您需要先加入 龙山Craft 服务器交流群。 加入群里方便平时与朋友交流以及与联系管理，可以即使收到相关消息。 如果您没有 QQ 或不方便加入群里，可以向 mail@nuc.red
+              <p>为了加入服务器，您需要先加入 龙山Craft 服务器交流群。 加入群里方便平时与朋友交流以及与联系管理，可以即使收到相关消息。
+                如果您没有 QQ 或不方便加入群里，可以向 mail@nuc.red
                 发送邮件。</p>
             </v-col>
             <v-col lg="4">
-              <v-img class="text-left" src="https://s1.ax1x.com/2022/03/24/qJd4bj.png" contain max-height="160px"/>
+              <v-img class="text-left" src="@/assets/qrcode.webp" contain max-height="160px"/>
             </v-col>
           </v-row>
           <br/>
@@ -47,10 +48,13 @@
               <a href="https://mirrors.tuna.tsinghua.edu.cn/Adoptium/17/jre/x64/windows/OpenJDK17U-jre_x64_windows_hotspot_17.0.2_8.msi">点击这里</a>
               下载并安装 Java 17（一直点击下一步即可）；
             </li>
-            <li>将群文件中下载的客户端移动到电脑上您找得到的地方（比如 <code>D:\Games</code> 或者 <code>桌面</code> 等）；</li>
-            <li>右键下载的客户端，找到“解压缩”或“解压文件夹”等类似字样，点击。<span class="font-weight-bold">不要</span>直接双击打开；</li>
+            <li>将群文件中下载的客户端移动到电脑上您找得到的地方（比如 <code>D:\Games</code> 或者 <code>桌面</code> 等）；
+            </li>
+            <li>右键下载的客户端，找到“解压缩”或“解压文件夹”等类似字样，点击。<span class="font-weight-bold">不要</span>直接双击打开；
+            </li>
             <li>解压完成后桌面将会多出来一个包含有 "NUCraft" 字样的文件夹，文件内有包含 "HMCL" 字样的文件，双击打开；</li>
-            <li>点击右下角的“启动游戏”，将会弹出窗口提示您添加账户。如果您没有购买/不知道 Minecraft 正版，请直接在离线模式输入您想要的游戏ID，如果有正版则选择 MOJANG 或 Microtost 登录；
+            <li>点击右下角的“启动游戏”，将会弹出窗口提示您添加账户。如果您没有购买/不知道 Minecraft
+              正版，请直接在离线模式输入您想要的游戏ID，如果有正版则选择 MOJANG 或 Microtost 登录；
             </li>
             <li>稍等一段时间，游戏将会启动。点击 “多人游戏”，加入列表里的 龙山Craft 服务器即可。</li>
           </ol>
@@ -79,7 +83,8 @@
         <section>
           <h2>游玩</h2>
           <p>服务器内有诸多公共资源，可以在不违背道德的情况下自由使用，如果您找不到这些可以在群里询问群友；</p>
-          <p>服务器内有发达的铁路系统，您可以乘坐矿车到龙山城定居。如果喜欢自己探索并在别处定居可以联系龙山局集团修建铁路。</p>
+          <p>
+            服务器内有发达的铁路系统，您可以乘坐矿车到龙山城定居。如果喜欢自己探索并在别处定居可以联系龙山局集团修建铁路。</p>
           <p>有不懂的事可以问我们，我们会亲切的告诉你。</p>
         </section>
         <section>
