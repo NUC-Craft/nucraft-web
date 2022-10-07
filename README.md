@@ -1,24 +1,13 @@
-# nucraft-web
+# 龙山Craft 官网
 
-## Project setup
-```
-npm install
-```
+[nuc.red](https://nuc.red)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+此项目为 NUCraft 的官网。
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## 协议
 
-### Lints and fixes files
-```
-npm run lint
-```
+GPLv3
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 贡献
+
+发起 Pull Request 即可，在 review 无问题后会 merge。
